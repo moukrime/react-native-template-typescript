@@ -1,0 +1,25 @@
+{
+  "name": "react-native-template-typescript",
+  "version": "1.0.0",
+  "description": "React Native template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moukrime/react-native-template-typescript.git"
+  },
+  "keywords": [
+    "react-native",
+    "template",
+    "react-native-template-typescript",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Abdelhaq Moukrime",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moukrime/react-native-template-typescript/issues"
+  },
+  "homepage": "https://github.com/moukrime/react-native-template-typescript#readme"
+}

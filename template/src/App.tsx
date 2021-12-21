@@ -9,17 +9,14 @@
  */
 
 import React from 'react';
-import {StatusBar, useColorScheme} from 'react-native';
-import Route from '@navigation/route';
+import {Route} from 'navigation';
+import {ThemeProvider} from 'components';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
   return (
-    <>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+    <ThemeProvider>
       <Route />
-    </>
+    </ThemeProvider>
   );
 };
 

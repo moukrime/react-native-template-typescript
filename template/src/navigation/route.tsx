@@ -1,12 +1,11 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-
-import Home from '@screens/home';
+import {Home} from 'screens';
 
 const Stack = createStackNavigator();
 
-const Route = () => {
+export const Route = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
@@ -21,5 +20,3 @@ const Route = () => {
     </NavigationContainer>
   );
 };
-
-export default Route;

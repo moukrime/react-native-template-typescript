@@ -1,17 +1,19 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import {Button, Screen, View, Text} from 'components';
 
-export default function Home() {
+export const Home = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <Text>Home</Text>
-      <Icon name="rocket" size={30} color="#900" />
-    </View>
+    <Screen>
+      <View flex={1} alignItems="center" justifyContent="center">
+        <Text variant="body">Home</Text>
+        <Icon name="rocket" size={30} color="#900" />
+        <Button
+          label="GO"
+          onPress={() => console.log('Pressed')}
+          variant="secondary"
+        />
+      </View>
+    </Screen>
   );
-}
+};
